@@ -22,6 +22,21 @@ public class hewan {
     public void setUsia(int usia) {
         this.usia = usia;
     }
-    // getter dari semua variable attribute/data
 
+    // getter dari semua variable attribute/data
+    // getter tidak memiliki parameter
+    // karena langsung mengambil data dari setter.
+
+    public String getTipe() {
+
+        return this.tipe;
+    }
+
+    public String getSuara() {
+        return this.suara;
+    }
+
+    public int getUsia() {
+        return this.usia;
+    }
 }
