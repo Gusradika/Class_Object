@@ -23,7 +23,6 @@ public class samsung {
     }
 
     // custom
-
     public int beli() {
         total = getHarga() * getJumlah();
         return total;
