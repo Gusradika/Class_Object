@@ -1,4 +1,4 @@
-package tugas_pt1;
+package tugas_pt2;
 
 public class undika {
     private String nama,
