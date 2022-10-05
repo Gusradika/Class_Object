@@ -16,7 +16,7 @@ public class main {
             String k = br.readLine();
             System.out.print("Isi Tinggi : ");
             int t = Integer.parseInt(br.readLine());
-            System.out.print("Isi Tinggi : ");
+            System.out.println();
 
             // Masukan parameter ke dalam Object
             x = new sub(n, k, t);
@@ -25,11 +25,8 @@ public class main {
             x.dataLengkap();
 
         } catch (Exception e) {
-            System.err.println("ERROR");
+            System.err.println(e);
         }
 
-        x.cetak();
-        System.out.println();
-        x.halo();
     }
 }
