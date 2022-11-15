@@ -14,8 +14,14 @@ public interface toko {
 
     public void cetak();
 
-    public void cetakBarang() throws IOException;
+    public void beliBarang() throws IOException;
 
-    public void beli(int x);
+    public int operasiHitung(int x, int y);
+
+    public int operasiHitungTotal();
+
+    public void cekBarang();
+
+    public void invoice();
 
 }

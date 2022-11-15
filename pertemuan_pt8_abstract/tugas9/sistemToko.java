@@ -6,9 +6,17 @@ import java.util.*;
 public class sistemToko implements toko {
 
     protected BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static Vector<Integer> id = new Vector<Integer>();
     static Vector<String> barang = new Vector<String>();
     static Vector<Integer> harga = new Vector<Integer>();
     static Vector<Integer> stok = new Vector<Integer>();
+    static Vector<Integer> identifier = new Vector<Integer>();
+
+    static Vector<String> keranjang = new Vector<String>();
+    static Vector<Integer> jumlahBeli = new Vector<Integer>();
+    static Vector<Integer> totalSatuan = new Vector<Integer>();
+    static Vector<Integer> idBarangdiBeli = new Vector<Integer>();
+
     int count = 0;
     int pilih = 0;
     int jumlah = 0;
@@ -62,16 +70,15 @@ public class sistemToko implements toko {
         return 0;
     }
 
-    // Beli
+    // JumlahBeli, id barang yang dibeli, Index
     @Override
-    public void beli(int x) {
-        System.out.println();
-        total = harga(x);
+    public int operasiHitung(int x, int y) {
+        return x * harga.get(y);
     }
 
     // Cetak Barang
     @Override
-    public void cetakBarang() throws IOException {
+    public void beliBarang() throws IOException {
         // main.cetakSpasi(2);
         // System.out.println("ID\tNama Barang\tStok\tHarga");
         // for (int i = 0; i < barang.size(); i++) {
@@ -80,8 +87,29 @@ public class sistemToko implements toko {
         // }
     }
 
+    @Override
     public void cekBarang() {
 
+    }
+
+    @Override
+    public void invoice() {
+
+    }
+
+    @Override
+    public int operasiHitungTotal() {
+
+        return 0;
+    }
+
+    public void clearCache() {
+        for (int i = 0; i <= keranjang.size(); i++) {
+            keranjang.remove(i);
+            jumlahBeli.remove(i);
+            totalSatuan.remove(i);
+            idBarangdiBeli.remove(i);
+        }
     }
 
 }

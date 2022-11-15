@@ -18,4 +18,5 @@ public class perempuan extends manusia {
         // TODO Auto-generated method stub
         return (tinggiBadan - 100) * 0.8;
     }
+
 }

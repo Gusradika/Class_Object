@@ -3,7 +3,9 @@ package praktikum;
 abstract public class manusia {
     static double tinggiBadan = 160;
 
-    abstract double manusia(double tinggiBadan);
+    public manusia(double tinggiBadan) {
+        this.tinggiBadan = tinggiBadan;
+    }
 
     public double getTinggiBadan() {
         return tinggiBadan;
