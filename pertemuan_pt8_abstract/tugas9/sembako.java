@@ -60,7 +60,7 @@ public class sembako extends sistemToko implements toko {
 
     public void cekBarang() {
         main.cetakSpasi(2);
-        System.out.println("ID\tNama Barang\tStok\tHarga");
+        System.out.println("ID\tNama Barang\tStok Kg\tHarga");
         for (int i = 0; i < barang.size(); i++) {
             System.out.println("[" + (i + 1) + "]\t" + barang.get(i) + "\t\t" + stok.get(i) + "\t" + harga.get(i));
         }

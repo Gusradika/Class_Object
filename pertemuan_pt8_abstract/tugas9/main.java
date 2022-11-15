@@ -46,7 +46,7 @@ public class main {
                             menu();
                         }
                     }
-                    toko.cetakBarang();
+
                     break;
 
                 case 2:
@@ -74,7 +74,7 @@ public class main {
         String[] cBarang = { "Kopi", "Beras", "Gula", "Minyak" };
         int[] cHarga = { 2000, 6500, 8000, 12000 };
         int[] cStok = { 20, 13, 8, 12 };
-        String[] c2Barang = { "Coca-Cola", "Pepsi", "Fanta", "Milo" };
+        String[] c2Barang = { "Cola", "Pepsi", "Fanta", "Milo" };
         int[] c2Harga = { 4000, 4000, 4500, 6000 };
         int[] c2Stok = { 20, 13, 8, 12 };
 
