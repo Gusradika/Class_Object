@@ -5,8 +5,8 @@ import java.io.*;
 public class mainClass {
 
     public static void main(String[] args) throws IOException {
-        manusia laki = new laki_laki(0);
-        manusia perempuan = new perempuan(0);
+        manusia laki = new laki_laki(0, 0);
+        manusia perempuan = new perempuan(0, 0);
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -23,10 +23,17 @@ public class mainClass {
             if (input.equalsIgnoreCase("L")) {
                 System.out.print("Masukan Tinggi Badan : ");
                 laki.tinggiBadan = Integer.parseInt(br.readLine());
+                System.out.print("Masukan Berat Badan : ");
+                laki.bb = Integer.parseInt(br.readLine());
+                cetakSpasi(1);
                 System.out.println("Berat badan ideal : " + laki.htgBB());
+                System.out.println("BMI Indexs : " + laki.hitungBmi());
             } else if (input.equalsIgnoreCase("P")) {
                 System.out.print("Masukan Tinggi Badan : ");
                 perempuan.tinggiBadan = Integer.parseInt(br.readLine());
+                System.out.print("Masukan Berat Badan : ");
+                perempuan.bb = Integer.parseInt(br.readLine());
+                cetakSpasi(1);
                 System.out.println("Berat badan ideal : " + perempuan.htgBB());
             } else {
                 System.out.println("Null");
